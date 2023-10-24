@@ -1,4 +1,8 @@
 import { createElement } from './utils';
+import { main } from './page-load';
+import Home from './Home';
+import Contact from './Contact';
+
 export function createNav() {
 	const nav = createElement('div', { className: 'nav' });
 	const heading = createElement('h1', {
@@ -33,6 +37,8 @@ export function createNav() {
 }
 
 export const handleTabClick = () => {
+	Home();
+
 	const tabs = document.querySelectorAll('.btn');
 	tabs.forEach((tab) => {
 		tab.addEventListener('click', changeTab);
@@ -44,11 +50,13 @@ export const handleTabClick = () => {
 		changeActiveTab(e);
 
 		if (targetTab.id === 'home') {
-			console.log('HOME');
+			main.innerHTML = '';
+			Home();
 		} else if (targetTab.id === 'menu') {
-			console.log('MENU');
+			main.innerHTML = '';
 		} else if (targetTab.id === 'contact') {
-			console.log('CONTACT');
+			main.innerHTML = '';
+			Contact();
 		}
 	}
 
