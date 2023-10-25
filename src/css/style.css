@@ -74,6 +74,7 @@ body {
 	max-width: 500px;
 	gap: 2.5rem;
 	padding: 1rem;
+	background-color: rgba(0, 0, 0, 0.3);
 }
 .hero h2 {
 	font-size: 3rem;
@@ -86,6 +87,17 @@ body {
 .chef {
 	max-width: 20rem;
 	border-radius: 12px;
+}
+.menu-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+.menu-item {
+	padding: 1rem 0;
+}
+.menu-title {
+	font-size: 2rem;
+	padding-bottom: 0.25rem;
 }
 .map {
 	border-radius: 50%;
@@ -102,10 +114,8 @@ body {
 }
 .footer img {
 	height: 1.25rem;
-	fill: antiquewhite;
 	transition: transform 0.4s ease-in-out;
 }
 .footer img:hover {
 	transform: rotateY(0.5turn) scale(1.4);
-	cursor: pointer;
 }
