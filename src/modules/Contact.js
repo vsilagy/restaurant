@@ -11,9 +11,13 @@ export default function Contact() {
     NY 10065 <br>
     Phone: (212) 582-2000`;
 
-	const map = new Image();
-	map.classList.add('map');
-	map.src = mapImage;
+	const map = createElement('img', {
+		attributes: {
+			src: mapImage,
+			alt: 'Map',
+		},
+		className: 'map',
+	});
 
 	contact.appendChild(heading);
 	contact.appendChild(text);

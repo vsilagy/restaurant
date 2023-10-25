@@ -1,6 +1,7 @@
 import { createElement } from './utils';
 import { main } from './page-load';
 import Home from './Home';
+import Menu from './Menu';
 import Contact from './Contact';
 
 export function createNav() {
@@ -54,6 +55,7 @@ export const handleTabClick = () => {
 			Home();
 		} else if (targetTab.id === 'menu') {
 			main.innerHTML = '';
+			Menu();
 		} else if (targetTab.id === 'contact') {
 			main.innerHTML = '';
 			Contact();
