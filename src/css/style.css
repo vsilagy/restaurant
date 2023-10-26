@@ -71,10 +71,9 @@ body {
 	flex-direction: column;
 	align-items: flex-start;
 	margin-top: 3rem;
-	max-width: 500px;
-	gap: 2.5rem;
+	max-width: 600px;
+	gap: 1.5rem;
 	padding: 1rem;
-	background-color: rgba(0, 0, 0, 0.3);
 }
 .hero h2 {
 	font-size: 3rem;
@@ -84,24 +83,17 @@ body {
 	font-size: 1.15rem;
 	font-style: italic;
 }
-.chef {
-	max-width: 20rem;
-	border-radius: 12px;
-}
-.menu-wrapper {
-	display: flex;
-	flex-direction: column;
-}
 .menu-item {
-	padding: 1rem 0;
+	padding: 0.75rem 0;
 }
 .menu-title {
-	font-size: 2rem;
+	font-size: 1.75rem;
 	padding-bottom: 0.25rem;
 }
 .map {
 	border-radius: 50%;
 	max-width: 20rem;
+	margin-top: 1rem;
 }
 /* footer */
 .footer {
